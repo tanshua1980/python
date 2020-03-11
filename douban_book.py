@@ -29,8 +29,7 @@ def parse_one_page(html, start):
         yield{
             #'page': start//25+1,
             #'ranking': start+i+1,
-            #'book': 
-            items1[i][1],
+            'book': items1[i][1],
             'link': items1[i][0],
             
             'author': items2[i][0].replace('/', '').strip(),
